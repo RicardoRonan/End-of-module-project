@@ -1,4 +1,87 @@
-#nav-container {
+section {
+  min-height: 100vh;
+  margin-left: 150px;
+  padding: 0px 10px;
+  background-color: #0b0b09;
+}
+#home {
+  padding: 80px;
+}
+#home h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 100px;
+}
+#home h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 80px;
+}
+#landing-text {
+  font-size: 48px;
+}
+
+h1.blast {
+  opacity: 0;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+#about {
+  padding: 80px;
+}
+#about h1 {
+  font-size: 48px;
+}
+#sidebar {
+  background-color: #161612;
+}
+.sidenav {
+  height: 100%;
   width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+
+  color: #818181;
+  display: block;
+}
+.sidenav a:hover {
+  color: #0bf2d3;
+}
+.box {
+  padding-top: 230px;
+}
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: none;
+}
+#offcanvasExample {
+  width: 170px;
   height: 100vh;
+}
+@media only screen and (max-width: 1200px) {
+  .sidenav {
+    display: none;
+  }
+  section {
+    padding: 0;
+    margin: 0;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    display: contents;
+  }
 }
