@@ -18,6 +18,19 @@ section {
 #landing-text {
   font-size: 48px;
 }
+#contact-btn {
+  width: 200px;
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  /* padding: 0 0.25rem; */
+  /* margin: 0 -0.25rem; */
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-color: #08fdd8;
+}
+#contact-btn:hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #54b3d6;
+}
 
 h1.blast {
   opacity: 0;
@@ -31,6 +44,36 @@ h1.blast {
 }
 #about h1 {
   font-size: 48px;
+  width: fit-content;
+}
+.typewriter h1 {
+  width: fit-content;
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(42, 243, 229);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 2.5s steps(20, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(42, 243, 229);
+  }
 }
 #sidebar {
   background-color: #161612;
@@ -46,16 +89,25 @@ h1.blast {
   overflow-x: hidden;
   padding-top: 20px;
 }
-
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
 
-  color: #818181;
+  color: whitesmoke;
+  display: block;
+}
+#canvas a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+
+  color: whitesmoke;
   display: block;
 }
 .sidenav a:hover {
-  color: #0bf2d3;
+  color: #08fdd8;
+}
+#canvas a:hover {
+  color: #08fdd8;
 }
 .box {
   padding-top: 230px;
@@ -65,12 +117,64 @@ h1.blast {
   justify-content: flex-end;
   align-items: flex-start;
   display: none;
+  position: sticky;
+  top: 0;
 }
 #offcanvasExample {
-  width: 170px;
+  width: 100%;
   height: 100vh;
 }
-@media only screen and (max-width: 1200px) {
+#projects {
+  min-height: 100vh;
+}
+#testimonials {
+  min-height: 100vh;
+}
+#contact {
+  min-height: 100vh;
+}
+#projects h1,
+#testimonials h1,
+#contact h1 {
+  font-size: 48px;
+}
+video {
+  zoom: 120%;
+  border-radius: 90%;
+  object-fit: cover;
+
+  height: 480px !important;
+}
+#tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+#tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1285.6px) {
   .sidenav {
     display: none;
   }
@@ -83,5 +187,17 @@ h1.blast {
     justify-content: flex-end;
     align-items: flex-start;
     display: contents;
+    position: sticky;
+    top: 0;
+  }
+  button#navbar-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
