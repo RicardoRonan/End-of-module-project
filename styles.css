@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 section {
   min-height: 100vh;
   margin-left: 150px;
@@ -96,8 +99,11 @@ h1.blast {
     border-color: rgb(42, 243, 229);
   }
 }
+
 #sidebar {
   background-color: #161612;
+  box-shadow: 3px 3px 3px black;
+  overflow-y: hidden;
 }
 .sidenav {
   height: 100%;
