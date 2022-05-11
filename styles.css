@@ -251,10 +251,10 @@ h1.blast {
   padding: 80px;
 }
 
-.jason-container {
+/* .jason-container {
   display: flex;
   justify-content: center;
-}
+} */
 .flip-card {
   background-color: transparent;
   width: 300px;
