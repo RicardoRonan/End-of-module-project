@@ -49,7 +49,7 @@ h1.blast {
   min-height: 100vh;
 }
 #about h1 {
-  font-size: 48px;
+  font-size: 40px;
   width: fit-content;
 }
 #modal-dialog {
@@ -58,7 +58,7 @@ h1.blast {
   background-color: #0b0b09;
 }
 .typewriter h1 {
-  width: fit-content;
+  width: 100%;
   color: #fff;
   font-family: monospace;
   overflow: hidden;
@@ -153,17 +153,21 @@ h1.blast {
 }
 #projects {
   min-height: 100vh;
+  padding: 80px;
 }
 #testimonials {
   min-height: 100vh;
+  padding: 80px;
 }
 #contact {
   min-height: 100vh;
+  padding: 80px;
 }
 #projects h1,
 #testimonials h1,
 #contact h1 {
-  font-size: 48px;
+  font-size: 40px;
+  width: fit-content;
 }
 video {
   zoom: 120%;
@@ -209,6 +213,9 @@ video {
 }
 
 @media only screen and (max-width: 1285.6px) {
+  body {
+    overflow-x: hidden;
+  }
   .sidenav {
     display: none;
   }
@@ -216,6 +223,7 @@ video {
     padding: 0;
     margin: 0;
   }
+
   .btn-container {
     display: flex;
     justify-content: flex-end;
@@ -226,12 +234,24 @@ video {
   }
   button#navbar-btn {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 30px;
   }
   video {
     width: 100%;
     height: auto;
     object-fit: cover;
+  }
+  #offcanvasExample {
+    width: 100%;
+    height: 100vh;
+  }
+  .offcanvas-body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .offcanvas-header .btn-close {
+    top: 40px;
+    right: 40px;
   }
 }
