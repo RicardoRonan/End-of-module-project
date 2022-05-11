@@ -254,4 +254,7 @@ video {
     top: 40px;
     right: 40px;
   }
+  .about-text.p-3.m-5.text-xl-start.container-fluid {
+    padding-right: 80px;
+  }
 }
