@@ -495,7 +495,9 @@ iframe {
   width: fit-content;
 }
 #form-row{
-   flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important; 
+   display: flex;
+   justify-content: center;
 }
 .orb{
   animation: spin 4s linear infinite;
@@ -554,7 +556,7 @@ iframe {
   button#navbar-btn {
     position: fixed;
     top: 30px;
-    right: 177px;
+    right: 30px;
     z-index: 1000;
   }
   video {
@@ -667,9 +669,9 @@ iframe{
   width: 100%;
   height: 300px;
 }
-/* #form-row{
-  flex-wrap: nowrap;  
-} */
+ #form-row{
+  flex-wrap: wrap !important;  
+} 
 #map-container{
   display: flex;
   justify-content: center;
