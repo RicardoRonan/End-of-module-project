@@ -42,6 +42,11 @@
             About
           </a>
         </li>
+             <li class="nav-item px-2 py-2 border-bottom border-secondary">
+        <a href="#resume" class="nav-link active" aria-current="page">
+           Resume
+          </a>
+          </li>
         <li class="nav-item px-2 py-2 border-bottom border-secondary">
           <a href="#projects" class="nav-link">Projects</a>
         </li>
@@ -51,9 +56,7 @@
         <li class="nav-item px-2 py-2 border-bottom border-secondary">
           <a href="#contact" class="nav-link"> Contact </a>
         </li>
-        <a href="#resume" class="nav-link active" aria-current="page">
-           Resume
-          </a>
+     
       </ul>
 
       <div id="box" class="box d-flex">
@@ -308,11 +311,29 @@
     </section>
 
     <section id="resume">
-      <div class="resume-container">
-        <div class="row">
-        
-        </div>
+  <div class="title-container text-white text-xl-start ">
+      <div class="typewriter">
+        <h1 p-5>Resume</h1>
       </div>
+      
+      <h3 id="sub-title" class="text-muted fs-3">Education</h3>
+ 
+      <div class=" conatiner bg-dark">
+  <div class="main-card bg-dark p-5">
+   <div class="left-card p-4">
+        
+   </div>
+    <div class="middle-card p-4">
+      
+    </div>
+    <div class="right-card p-4">
+         <h3 class="text-muted fs-3" >Matric</h3> 
+           <p>2017-2021</p>
+    </div>
+  </div>
+</div>
+
+ 
 
 
 
@@ -322,7 +343,7 @@
         <div class="typewriter">
           <h1 p-5>My Projects</h1>
         </div>
-        <p class="fs-3 text-white">Here are a few of my projects that I've created.</p>
+        <p id="sub-title" class="fs-3 text-white">Here are a few of my projects that I've created.</p>
       </div>
   
       <div class="container py-5">
@@ -333,7 +354,11 @@
             <div  class="project-details">
               <h5>Calculator</h5>
               <div  id="tooltip-new" class="icon-container border-bottom border-dark">
-                <span class="tooltiptext-new">Live link</span>
+                 <a
+                  href="https://sumhelper.netlify.app/"
+                  target="_blank"
+                  class="nav-link text-white"
+                  ><span class="tooltiptext-new">Live link</span></a>
                   <a
                   href="https://sumhelper.netlify.app/"
                   target="_blank"
@@ -342,7 +367,11 @@
                 </a>
               </div>
                 <div  id="tooltip-new" class="icon-container border-bottom border-dark">
-                  <span class="tooltiptext-new">Github</span>
+                    <a
+                  href="https://github.com/RicardoRonan/calc"
+                  target="_blank"
+                  class="nav-link text-white"
+                  ><span class="tooltiptext-new">Github</span></a>
              <a
                   href="https://github.com/RicardoRonan/calc"
                   target="_blank"
@@ -360,7 +389,11 @@
             <div class="project-details">
               <h5>Restuarant</h5>
    <div  id="tooltip-new" class="icon-container border-bottom border-dark">
-                  <span class="tooltiptext-new">Live link</span>
+                   <a
+                  href="https://fyefoodsrestuarant.netlify.app/"
+                  target="_blank"
+                  class="nav-link text-white"
+                  ><span class="tooltiptext-new">Live link</span></a>
                     <a
                   href="https://fyefoodsrestuarant.netlify.app/"
                   target="_blank"
@@ -369,7 +402,11 @@
                 </a>
                 </div>
                 <div  id="tooltip-new" class="icon-container border-bottom border-dark">
-                  <span class="tooltiptext-new">Github</span>
+                    <a
+                  href="https://github.com/RicardoRonan/Resturant"
+                  target="_blank"
+                  class="nav-link text-white"
+                  ><span class="tooltiptext-new">Github</span></a>
                  <a
                   href="https://github.com/RicardoRonan/Resturant"
                   target="_blank"
@@ -387,7 +424,11 @@
             <div class="project-details">
               <h5>Holiday Destination</h5>
               <div  id="tooltip-new" class="icon-container border-bottom border-dark">
-                  <span class="tooltiptext-new">Live link</span>
+                   <a
+                  href="https://destinationofholiday.netlify.app/"
+                  target="_blank"
+                  class="nav-link text-white"
+                  ><span class="tooltiptext-new">Live link</span> </a>
                <a
                   href="https://destinationofholiday.netlify.app/"
                   target="_blank"
@@ -396,7 +437,11 @@
                 </a>
                 </div>
                 <div  id="tooltip-new" class="icon-container border-bottom border-dark">
-                  <span class="tooltiptext-new">Github</span>
+                    <a
+                  href="https://github.com/RicardoRonan/main"
+                  target="_blank"
+                  class="nav-link text-white"
+                  ><span class="tooltiptext-new">Github</span></a>
                  <a
                   href="https://github.com/RicardoRonan/main"
                   target="_blank"
@@ -418,7 +463,7 @@
         <div class="typewriter">
           <h1 p-5>Testimonials</h1>
         </div>
-        <p class="fs-3 text-white">
+        <p  id="sub-title" class="fs-3 text-white">
           Heres what people have to say...
         </p>
         <p id="mobile-text" class="text-muted fs-4">Click these cards to flip them!</p>
@@ -546,6 +591,46 @@
           <h1 p-5>Contact</h1>
         </div>
       </div>
+      <div class="row">
+        <div id="form" class="col-lg-6 mt-5">
+<form
+  action="https://formspree.io/f/xeqnvkgr"
+  method="POST"
+>
+<div class="row g-3">
+  <div class="col">
+    <input type="text"
+     required class="form-control mb-3 bg-dark" placeholder="First name" aria-label="First name" name="firstname">
+  </div>
+  <div class="col">
+    <input type="text" required class="form-control bg-dark" placeholder="Last name" aria-label="Last name" name="lastname">
+  </div>
+ </div>  
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label" name="email"></label>
+  <input required type="email" class="form-control   bg-dark" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
+</div>
+
+<div class="mb-3">
+  <label for="Textarea1" class="form-label" name="message"></label>
+  <textarea required class="form-control bg-dark" id="Textarea1" rows="3" name="message" placeholder="Your message here..."></textarea>
+</div>
+<div class="container d-flex justify-content-between ">
+  <button id="contact-btn" type="submit" class="btn bg-dark mx-2">Send</button>
+<input id="contact-btn" class="btn   bg-dark  mx-2 " type="reset" value="Reset"/>
+</div>
+
+
+
+
+
+</form>
+        </div>
+        <div id="map" class="col-lg-6 mt-5 text-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.267419708809!2d18.490509915169596!3d-33.98566428062407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc433bedd50e81%3A0x9c746d268c8e0ad9!2sLife%20Choices!5e0!3m2!1sen!2sza!4v1652356778623!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+   
     </section>
      <div id="footer"  class="container" >
       <footer class=" text-center border-top py-3 my-4 bg-black" >
