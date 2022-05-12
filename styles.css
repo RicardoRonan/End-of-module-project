@@ -522,6 +522,15 @@ iframe {
 #orb-cont{
   margin-right: 100px;
 }
+@media only screen and (max-width: 375px) {
+ 
+button#navbar-btn {
+    position: fixed;
+    top: 30px;
+    right: 173px;
+    z-index: 1000;
+}
+}
 @media only screen and (max-width: 600px) {
   body {
    overflow-x: hidden;
@@ -556,7 +565,7 @@ iframe {
   button#navbar-btn {
     position: fixed;
     top: 30px;
-    right: 30px;
+    right: 170px;
     z-index: 1000;
   }
   video {
