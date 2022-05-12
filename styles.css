@@ -527,7 +527,7 @@ iframe {
 button#navbar-btn {
     position: fixed;
     top: 30px;
-    right: 173px;
+    right: 30px;
     z-index: 1000;
 }
 }
