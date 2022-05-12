@@ -390,6 +390,9 @@ video {
 #tooltiptext-new {
   display: none;
 }
+#mobile-text {
+  display: none;
+}
 
 @media only screen and (max-width: 1285.6px) {
   body {
@@ -458,10 +461,14 @@ video {
   #tooltip-new .tooltiptext-new {
     visibility: visible;
   }
-  #testimonials {
-    padding: 30px;
+  .test-container {
+    display: flex;
+    justify-content: center;
   }
   .project-details {
     opacity: 1;
+  }
+  #mobile-text {
+    display: contents;
   }
 }
