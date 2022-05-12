@@ -565,7 +565,7 @@ button#navbar-btn {
   button#navbar-btn {
     position: fixed;
     top: 30px;
-    right: 170px;
+    right: 30px;
     z-index: 1000;
   }
   video {
