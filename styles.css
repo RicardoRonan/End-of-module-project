@@ -415,6 +415,7 @@ video {
     position: fixed;
     top: 30px;
     right: 30px;
+    z-index: 1000;
   }
   video {
     display: none;
@@ -448,10 +449,19 @@ video {
   #tooltip:hover .tooltiptext {
     visibility: hidden;
   }
-  #tooltip-new:hover .tooltiptext-new {
+  /* #tooltip-new:hover .tooltiptext-new {
     visibility: hidden;
-  }
+  } */
   #tooltiptext-new {
     display: contents;
+  }
+  #tooltip-new .tooltiptext-new {
+    visibility: visible;
+  }
+  #testimonials {
+    padding: 30px;
+  }
+  .project-details {
+    opacity: 1;
   }
 }
