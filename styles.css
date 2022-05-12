@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
   background-color: #0b0b09;
 }
+#about-row{
+  display: flex;
+  flex-wrap: wrap !important;
+}
 #home {
   min-height: 100vh;
 }
@@ -87,6 +91,24 @@ h1.blast {
 .modal-footer {
   background-color: #161612;
 }
+#form{
+  display: flex;
+  justify-content: center;
+  
+}
+f
+#map-container{
+  display: flex;
+  justify-content: center;
+}
+/* #map{
+  display: flex;
+  justify-self:center;
+} */
+/* .container-fluid {
+  display: flex;
+  justify-content: center;
+} */
 
 @keyframes typing {
   from {
@@ -472,7 +494,42 @@ iframe {
   border-bottom: solid #fd2155;
   width: fit-content;
 }
-
+#form-row{
+   flex-wrap: nowrap !important;
+}
+.orb{
+  animation: spin 4s linear infinite;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 140px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #fff,
+  inset 20px 0 60px red,
+  inset -20px 0 60px blue, 
+  inset 20px 0 300px violet, 
+  inset -20px 0 300px blue,
+  0 0 50px #fff,
+  -10px 0 60px violet,
+  10px 0 60px blue;
+}
+@keyframes spin {
+  100%{-webkit-transform: rotate(360deg);
+  transform: rotate(360deg);}
+}
+#orb-cont{
+  margin-right: 100px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+   overflow-x: hidden;
+  }
+  button#navbar-btn{
+    position: relative;
+    top: 20px;
+    right: 20px;
+  }
+}
 @media only screen and (max-width: 1285.6px) {
   body {
     overflow-x: hidden;
@@ -483,6 +540,7 @@ iframe {
   section {
     padding: 0;
     margin: 0;
+    width: 100%;
   }
 
   .btn-container {
@@ -496,7 +554,7 @@ iframe {
   button#navbar-btn {
     position: fixed;
     top: 30px;
-    right: 30px;
+    right: 177px;
     z-index: 1000;
   }
   video {
@@ -550,4 +608,80 @@ iframe {
   #mobile-text {
     display: contents;
   }
+  #resume {
+    min-height: 120vh;
+    padding: 80px;
+}
+.conatiner {
+  position: relative;
+  /* min-width: 455px; */
+  display: flex;
+  justify-content: center;
+}
+.main-card {
+  position: absolute;
+  width: 74%;
+  height: 722px;
+  background: linear-gradient(109.61deg, #4c4f5a 4.26%, #202125 84.84%);
+  border-radius: 10px;
+  right: 180px;
+}
+
+.left-card {
+  position: absolute;
+  width: 200px;
+  height: 180px;
+  background: #1d1e22;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
+  border-radius: 6px;
+  /* right: 70px; */
+  /* top: 20px; */
+}
+.middle-card {
+  top: 266px;
+  right: 21%;
+  position: absolute;
+  width: 200px;
+  height: 180px;
+  background: #1d1e22;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
+  border-radius: 6px;
+}
+.right-card {
+  top: 478px;
+  left: 94%;
+  margin-left: -250px;
+  z-index: 4;
+  position: absolute;
+  width: 200px;
+  height: 180px;
+  background: #1d1e22;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
+  border-radius: 6px;
+}
+#form{
+  display: flex;
+  justify-content: center;
+}
+iframe{
+  width: 100%;
+  height: 300px;
+}
+/* #form-row{
+  flex-wrap: nowrap;  
+} */
+#map-container{
+  display: flex;
+  justify-content: center;
+}
+.orb-cont{
+  position: relative;
+  right: 56px;
+}
+.orb{
+  position: relative;
+    right: 41px;
+
+}
+
 }
