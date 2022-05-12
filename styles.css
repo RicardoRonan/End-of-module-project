@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  background-color: #0b0b09;
 }
 #home {
   min-height: 100vh;
@@ -313,10 +314,11 @@ h1.blast {
 }
 video {
   zoom: 120%;
-  border-radius: 90%;
+  border-radius: 50%;
   object-fit: cover;
   box-shadow: 3px 3px 3px grey;
   height: 480px !important;
+  width: 100%;
 }
 #skills-icon-container {
   box-shadow: 4px 4px 4px black;
@@ -370,6 +372,9 @@ video {
   position: absolute;
   z-index: 1;
 }
+#mobile-img {
+  display: none;
+}
 
 #tooltip-new:hover .tooltiptext-new {
   visibility: visible;
@@ -377,6 +382,13 @@ video {
 
 #bulb {
   color: white;
+}
+#tooltiptext {
+  display: none;
+}
+
+#tooltiptext-new {
+  display: none;
 }
 
 @media only screen and (max-width: 1285.6px) {
@@ -405,10 +417,15 @@ video {
     right: 30px;
   }
   video {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    display: none;
   }
+  #mobile-img {
+    display: block;
+    width: fit-content;
+    height: auto;
+    border-radius: 50%;
+  }
+
   #offcanvasExample {
     width: 100%;
     height: 100vh;
@@ -423,5 +440,18 @@ video {
   }
   .about-text.p-3.m-5.text-xl-start.container-fluid {
     padding-right: 80px;
+  }
+
+  #tooltiptext {
+    display: contents;
+  }
+  #tooltip:hover .tooltiptext {
+    visibility: hidden;
+  }
+  #tooltip-new:hover .tooltiptext-new {
+    visibility: hidden;
+  }
+  #tooltiptext-new {
+    display: contents;
   }
 }
