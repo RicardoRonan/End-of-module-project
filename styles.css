@@ -93,7 +93,8 @@ h1.blast {
   height: 3.5em;
   width: 0%;
   overflow: hidden;
-  animation: t 2s linear infinite alternate, blink-caret 0.5s step-end infinite;
+  animation: t 2s linear infinite alternate, blink-caret 0.65s step-end infinite;
+  border-right: 0.15em solid orange;
 }
 .typewriter :before {
   content: " ";
