@@ -65,7 +65,19 @@ h1.blast {
   height: 100vh;
   background-color: #0b0b09;
 }
-.typewriter h1 {
+.modal-header {
+  border-bottom: 0px !important;
+}
+.modal-content {
+  border: 0px;
+}
+.img-thumbnail {
+  border: 0px !important;
+}
+.modal-footer {
+  border-top: 0px !important;
+}
+/* .typewriter h1 {
   width: fit-content;
   color: #fff;
   font-family: monospace;
@@ -75,6 +87,34 @@ h1.blast {
   margin: 0 auto;
   letter-spacing: 0.15em;
   animation: typing 2.5s steps(20, end), blink-caret 0.5s step-end infinite;
+} */
+.typewriter {
+  word-break: break-all;
+  height: 3.5em;
+  width: 0%;
+  overflow: hidden;
+  animation: t 2s linear infinite alternate, blink-caret 0.5s step-end infinite;
+}
+.typewriter :before {
+  content: " ";
+  display: inline-block;
+}
+.typewriter1 {
+  word-break: break-all;
+  height: 3.5em;
+  width: 0%;
+  overflow: hidden;
+  animation: t 2s linear infinite alternate;
+}
+.typewriter1 :before {
+  content: " ";
+  display: inline-block;
+}
+@keyframes t {
+  90%,
+  100% {
+    width: 100%;
+  }
 }
 .modal-header {
   background-color: #161612;
@@ -112,14 +152,14 @@ h1.blast {
   justify-content: center;
 } */
 
-@keyframes typing {
+/* @keyframes typing {
   from {
     width: 0;
   }
   to {
     width: 50%;
   }
-}
+} */
 @keyframes blink-caret {
   from,
   to {
@@ -185,7 +225,7 @@ h1.blast {
   min-height: 100vh;
   padding: 80px;
 }
-#project-img {
+#prjec #project-img {
   display: block;
   width: 100%;
   height: auto;
@@ -264,6 +304,7 @@ h1.blast {
 #project-image {
   width: 600px;
   height: auto;
+  filter: grayscale();
 }
 /* #project-icon {
   display: flex;
@@ -317,6 +358,7 @@ h1.blast {
   border-radius: 6px;
   right: 70px;
   top: 70px;
+  z-index: 5;
 }
 .middle-card {
   top: 200px;
@@ -373,7 +415,7 @@ h1.blast {
 }
 #projects h1,
 #contact h1 {
-  font-size: 30px;
+  font-size: 40px;
   width: fit-content;
 }
 #testimonials h1 {
@@ -465,10 +507,10 @@ video {
   min-height: 100vh;
   padding: 80px;
 }
-#form {
+/* #form {
   display: flex;
   align-items: center;
-}
+} */
 .form-control {
   display: block;
   width: 100%;
@@ -506,7 +548,7 @@ iframe {
   margin: auto;
   margin-top: 140px;
   border-radius: 50%;
-  box-shadow: inset 0 0 50px #fff, inset 20px 0 60px red,
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 60px rgb(255, 255, 255),
     inset -20px 0 60px blue, inset 20px 0 300px violet, inset -20px 0 300px blue,
     0 0 50px #fff, -10px 0 60px violet, 10px 0 60px blue;
 }
@@ -519,8 +561,56 @@ iframe {
 #orb-cont {
   margin-right: 100px;
 }
-.form-control {
+
+.fold {
+  background: -webkit-linear-gradient(top, #e5e5e5, #ccc);
+  padding: 10px;
+  width: 280px;
+  height: 80px;
+  color: #999;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  bottom: -59px;
+  right: 28px;
+  position: absolute;
 }
+
+.unfolder {
+  display: none;
+}
+
+.toggle-label {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 11px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.unfold-icon,
+.fold-icon {
+  color: #999;
+  width: 10px;
+  display: inline-block;
+}
+.unfolder ~ .fold {
+  display: none;
+}
+.unfolder ~ label .fold-icon {
+  display: none;
+}
+
+.unfolder:checked ~ .fold {
+  display: block;
+}
+.unfolder:checked ~ label .fold-icon {
+  display: inline-block;
+}
+.unfolder:checked ~ label .unfold-icon {
+  display: none;
+}
+
 @media only screen and (max-width: 375px) {
   button#navbar-btn {
     position: fixed;
@@ -576,10 +666,10 @@ iframe {
     border-radius: 50%;
   }
 
-  /* #offcanvasExample {
+  #offcanvasExample {
     width: 100%;
     height: 100vh;
-  } */
+  }
   .offcanvas-body {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -687,16 +777,16 @@ iframe {
     width: 100%;
     height: auto;
   }
-  .orb-cont {
-    position: relative;
-    right: 56px;
-  }
-  .orb {
-    position: relative;
-    right: 21px;
-  }
+
   #testimonials h1 {
     position: relative;
+
     right: 20px;
+  }
+  #info {
+    position: absolute;
+    bottom: -4px;
+    right: -5px;
+    word-break: break-word;
   }
 }

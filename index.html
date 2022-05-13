@@ -169,7 +169,7 @@
         <h1 p-5>About Me</h1>
       </div>
       <div  id="about-row"   class="row pt-4">
-        <div class="col-xl-6 pt-5">
+        <div class="col-xl-6 pt-5 order-2 order-lg-1">
           <div class="about-text  text-xl-start container-fluid">
             I am an open-minded, artistic young man. I am friendly, extroverted
             and I am very adventurous when given the chance. I am always ready
@@ -296,7 +296,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-6 text-center ">
+        <div class="col-xl-6 text-center order-1 order-lg-2">
          <div class="orb"></div> 
 <!-- 
      <video  
@@ -325,9 +325,24 @@
       <div class=" conatiner bg-dark">
   <div class="main-card card-lg bg-dark p-5">
    <div class="left-card p-4">
+     <div id="info" class="container">
 
-   </div>
-    <div class="middle-card p-">
+      <h3 class="text-muted fs-5 text-center" >Info</h3> 
+                  <!-- <p><span class="text-muted">Name:</span>Ricardo Moses</p> -->
+                  <p>
+                    <span class="text-muted">Profile:</span>Full stack developer
+                  </p>
+                  <p>
+                    <span class="text-muted">Email:</span>ricardoronanm@gmail.com
+                  </p>
+     </div>
+      
+</div>
+               <div>
+ 
+                </div>
+   
+       <div class="middle-card">
       <h3 class="text-muted fs-3 text-center" >Life-Choices</h3> 
            <p class="fs-5 text-center">2022-Present</p>
            <p class="text-muted text-center">Currently studying Web Development at Life Choices Academy.</p>
@@ -337,7 +352,13 @@
            <p class="fs-5 text-center">2017-2021</p>
            <p class="text-muted ">Matriculated at AZ Berman Highschool.</p>
     </div>
-  </div>
+  
+                     <input type="checkbox" id="toggle" class="unfolder"/> 
+  <label for="toggle" class="toggle-label">read more</label>
+    		
+  <div class="fold">
+    Content
+   </div>
 </div>
 
  
@@ -346,10 +367,10 @@
 
     </section>
     <section id="projects">
-      <div class="title-container text-xl-start ">
+      <div class="title-container text-white text-xl-start ">
         <div class="typewriter">
-          <h1 p-5>My Projects</h1>
-        </div>
+        <h1 p-5>My Projects</h1>
+      </div>
         <p id="sub-title" class="fs-3 text-white">Here are a few of my projects that I've created.</p>
       </div>
   
@@ -466,10 +487,10 @@
     
     </section>
     <section id="testimonials">
-      <div class="title-container text-xl-start text-center">
-        <div class="typewriter">
-          <h1 p-5>Testimonials</h1>
-        </div>
+      <div class="title-container text-white text-xl-start text-center">
+         <div class="typewriter">
+        <h1 p-5>Testimonials</h1>
+      </div>
         <p  id="sub-title" class="fs-3 text-white">
           Heres what people have to say...
         </p>
@@ -483,7 +504,7 @@
     <div class="flip-card-front">
   <img id="test-img" src="/img/testimonials/Fatima (1) (1).jpg" class="card-img-top p-4 rounded " alt="Fatima Galant">
     </div>
-    <div class="flip-card-back p-4">
+    <div class="flip-card-back p-3">
       <h1>Fatima Galant</h1> 
       <p> Ricardo is a hard-working, talented and authentic individual who always goes above and beyond to achieve the best results possible. His good vibes and positivity is contagious.</p> 
       
@@ -498,11 +519,15 @@
     <div class="flip-card-front">
   <img id="test-img" src="/img/testimonials/Najmah.jpg" class="card-img-top p-4 rounded " alt="Najmah Japtha">
     </div>
-    <div class="flip-card-back p-4">
+    <div class="flip-card-back p-3">
       <h1>Najmah Japtha</h1> 
-      <p>     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-         Recusandae facilis reprehenderit dicta tempore tenetur possimus aperiam temporibus explicabo culpa. Exercitationem?.</p> 
-      
+      <p>  RICARDO is a well-adjusted young man with a positive attitude who always tried hard to do his best at his schoolwork. A glance through his high school record will reveal a learner who applied himself in an attempt to gain success in his studies. </p> 
+       <a
+                  href="https://docs.google.com/document/d/1Mpa3DNIMQ6eZHcFlSnqMVKu1TgHcS6ZC/edit"
+                  target="_blank"
+                  class="nav-link text-white"
+                  >read more
+                </a>
     </div>
   </div>
 </div>
@@ -515,7 +540,7 @@
     <div class="flip-card-front ">
   <img id="test-img" src="img/testimonials/Carla.PNG" class="card-img-top p-4 rounded " alt="Carla Amy Lawrence">
     </div>
-    <div class="flip-card-back p-4">
+    <div class="flip-card-back p-3">
       <h1>Carla Amy Lawrence</h1> 
       <p>     It has been a pleasure to have Ricardo Ronan Moses as my colleague. He is an outstanding web developer. 
                 His professionalism and effort can be seen in all projects he has worked on.
@@ -538,7 +563,7 @@
     <div class="flip-card-front">
   <img id="test-img" src="/img/testimonials/Jason.jpeg" class="card-img-top p-4 rounded " alt="Jason Wandrag">
     </div>
-    <div class="flip-card-back p-4">
+    <div class="flip-card-back p-3">
       <h1>Jason Wandrag</h1> 
       <p>   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias veniam repellat mollitia ut quos, quia odio accusamus totam itaque numquam?.</p> 
       
@@ -554,7 +579,7 @@
     <div class="flip-card-front">
   <img id="test-img" src="/img/testimonials/Natheerah (3) (1).jpg" class="card-img-top p-4 rounded " alt="Natheerah Abrahams">
     </div>
-    <div class="flip-card-back p-4">
+    <div class="flip-card-back p-3">
       <h1>Natheerah Abrahams</h1> 
       <p>Ricardo Moses has a winning attitude and is always willing to learns new things. He is always willing to extend a helping hand to assist others.</p> 
       
@@ -568,7 +593,7 @@
     <div class="flip-card-front">
   <img id="test-img" src="" class="card-img-top p-4 rounded " alt="">
     </div>
-    <div class="flip-card-back p-4">
+    <div class="flip-card-back p-3">
       <h1>nothing yet</h1> 
       <p>Ricardo Moses has a winning attitude and is always willing to learns new things. He is always willing to extend a helping hand to assist others.</p> 
       
@@ -593,10 +618,10 @@
      
     </section>
     <section id="contact">
-      <div class="title-container text-xl-start ">
-        <div class="typewriter">
-          <h1 p-5>Contact</h1>
-        </div>
+      <div class="title-container text-white text-xl-start ">
+         <div class="typewriter">
+        <h1 p-5>Contact</h1>
+      </div>
       </div>
      <div class="row ">
         <div id="form" class="col-lg-5 mt-5">
