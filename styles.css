@@ -99,17 +99,7 @@ h1.blast {
   content: " ";
   display: inline-block;
 }
-.typewriter1 {
-  word-break: break-all;
-  height: 3.5em;
-  width: 0%;
-  overflow: hidden;
-  animation: t 2s linear infinite alternate;
-}
-.typewriter1 :before {
-  content: " ";
-  display: inline-block;
-}
+
 @keyframes t {
   90%,
   100% {
@@ -413,13 +403,15 @@ h1.blast {
   min-height: 100vh;
   padding: 80px;
 }
-#projects h1,
+
 #contact h1 {
   font-size: 40px;
-  width: fit-content;
+}
+#projects h1 {
+  font-size: 40px;
 }
 #testimonials h1 {
-  font-size: 30px;
+  font-size: 40px;
   width: fit-content;
 }
 video {
@@ -711,6 +703,9 @@ iframe {
     min-height: 130vh;
     padding: 80px;
   }
+  #resume h1 {
+    font-size: 40px;
+  }
   .conatiner {
     position: relative;
     /* min-width: 455px; */
@@ -779,14 +774,24 @@ iframe {
   }
 
   #testimonials h1 {
-    position: relative;
+    /* position: relative;
 
-    right: 20px;
+    right: 20px; */
   }
   #info {
     position: absolute;
     bottom: -4px;
     right: -5px;
     word-break: break-word;
+  }
+  .typewriter {
+    word-break: break-all;
+    height: 3em;
+    width: 0%;
+    overflow: hidden;
+    animation: t 2s linear infinite alternate,
+      blink-caret 0.5s step-end infinite;
+  }
+  #test-title-container {
   }
 }
