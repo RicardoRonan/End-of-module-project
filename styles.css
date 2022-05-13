@@ -96,7 +96,7 @@ h1.blast {
   height: 3.5em;
   width: 0%;
   overflow: hidden;
-  animation: t 2s linear infinite alternate, blink-caret 0.65s step-end infinite;
+  animation: t 3s linear infinite alternate, blink-caret 0.65s step-end infinite;
   border-right: 0.15em solid orange;
 }
 .typewriter :before {
@@ -415,7 +415,7 @@ h1.blast {
   font-size: 40px;
 }
 #testimonials h1 {
-  font-size: 40px;
+  font-size: 30px;
   width: fit-content;
 }
 video {
@@ -884,12 +884,61 @@ iframe {
     right: -5px;
     word-break: break-word;
   }
+  #home h1 , #about h1 , #resume h1 , #projects h1 , #testimonials h1 , #contact h1 {
+    font-size: 30px;
+
+  }
   .typewriter {
     word-break: break-all;
-    height: 3em;
+    height: 2.5em;
     width: 0%;
     overflow: hidden;
     animation: t 2s linear infinite alternate,
       blink-caret 0.5s step-end infinite;
   }
+}
+@media only screen and (max-width: 1285.6px) and (min-width: 725px){
+  .main-card {
+    position: absolute;
+    width: 100%;
+    height: 609px;
+    background: linear-gradient(109.61deg, #4c4f5a 4.26%, #202125 84.84%);
+    border-radius: 10px;
+}
+.left-card {
+  position: absolute;
+  width: 400px;
+  height: 180px;
+  background: #1d1e22;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
+  border-radius: 6px;
+  right: 183px;
+  top: 219px;
+  z-index: 5;
+}
+.middle-card {
+  top: 411px;
+  right: 183px;
+  position: absolute;
+  width: 400px;
+  height: 180px;
+  background: #1d1e22;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
+  border-radius: 6px;
+}
+.right-card {
+  top: 24px;
+  left: 57%;
+  margin-left: -250px;
+  z-index: 4;
+  position: absolute;
+  width: 400px;
+  height: 180px;
+  background: #1d1e22;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
+  border-radius: 6px;
+}
+
+
+
 }
