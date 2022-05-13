@@ -727,7 +727,7 @@ iframe {
   }
 }
 @media only screen and (max-width: 768px) {
-  body {
+  html,body {
     overflow-x: hidden;
   }
   .sidenav {
@@ -896,6 +896,10 @@ iframe {
     animation: t 2s linear infinite alternate,
       blink-caret 0.5s step-end infinite;
   }
+  #tooltip{
+    background-color: #2c2e34;
+  }
+  
 }
 @media only screen and (max-width: 1285.6px) and (min-width: 725px){
   .main-card {
