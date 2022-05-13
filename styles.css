@@ -884,7 +884,7 @@ iframe {
     right: -5px;
     word-break: break-word;
   }
-  #home h1 , #about h1 , #resume h1 , #projects h1 , #testimonials h1 , #contact h1 {
+#about h1 , #resume h1 , #projects h1 , #testimonials h1 , #contact h1 {
     font-size: 30px;
 
   }
