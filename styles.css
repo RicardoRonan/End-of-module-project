@@ -97,17 +97,7 @@ h1.blast {
   border-top: 0px !important;
 }
 
-/* .typewriter h1 {
-  width: fit-content;
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden;
-  border-right: 0.15em solid rgb(42, 243, 229);
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 2.5s steps(20, end), blink-caret 0.5s step-end infinite;
-} */
+
 .typewriter {
   word-break: break-all;
   height: 3.5em;
@@ -149,34 +139,7 @@ h1.blast {
   background-color: #161612;
 }
 
-/* #form{
-  display: flex;
-  justify-content: center !important;
-  
-} */
 
-/* #map-container{
-  display: flex;
-  justify-content: center;
- 
-} */
-/* #map{
-  display: flex;
-  justify-self:center;
-} */
-/* .container-fluid {
-  display: flex;
-  justify-content: center;
-} */
-
-/* @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 50%;
-  }
-} */
 @keyframes blink-caret {
 
   from,
@@ -345,13 +308,7 @@ h1.blast {
   filter: grayscale();
 }
 
-/* #project-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-} */
+
 #tooltip-new i{
   color: whitesmoke;
 }
@@ -364,10 +321,7 @@ h1.blast {
 }
 
 
-/* .jason-container {
-  display: flex;
-  justify-content: center;
-} */
+
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -793,80 +747,7 @@ iframe {
     transform: scale(0.9);
   }
 }
- /* /* #home h1 {
-  /* font-size: calc(20px + 18vh); 
-  line-height: calc(20px + 20vh);
-   text-shadow: 0 0 5px white, 0 0 15px whitesmoke, 0 0 25px white,
-    0 0 20px white, 0 0 30px grey, 0 0 80px grey, 0 0 80px grey;
-  color: #fccaff; 
-  text-shadow: 0 0 5px rgb(8, 253, 216), 0 0 15px rgb(8, 253, 216), 0 0 20px rgb(8, 253, 216), 0 0 40px rgb(8, 253, 216), 0 0 60px grey, 0 0 10px white, 0 0 98px grey;
-    color: #08fdd8;
-  /* font-family: "Sacramento", cursive; 
-  /* text-align: center; 
-  animation: blink 12s infinite;
-  -webkit-animation: blink 12s infinite;
-}
-#home h2{
-    
-    line-height: calc(20px + 20vh);
-       text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-      color: #f562ff;
-      text-shadow: 0 0 5px #fd2155, 0 0 15px #fd2155, 0 0 20px #fd2155, 0 0 40px rgb(8, 253, 216), 0 0 60px grey, 0 0 10px white, 0 0 98px grey;
-        color: #fff6a9;
-      animation: blink 12s infinite;
-      -webkit-animation: blink 12s infinite;
 
-}
-
-
-@-webkit-keyframes blink {
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
-  }
-
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-/*     color: #fccaff;
-    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-  /* text-shadow: 0 0 5px rgb(8, 253, 216), 0 0 15px rgb(8, 253, 216), 0 0 20px rgb(8, 253, 216), 0 0 40px rgb(8, 253, 216), 0 0 60px grey, 0 0 10px white, 0 0 98px grey;
-    color: #fff6a9;
-  }
-} */
-
-/* @keyframes blink {
-  20%,
-  24%,
-  55% {
-    color: #111;
-    text-shadow: none;
-  }
-
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% { */
-/*     color: #fccaff;
-    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-  /* text-shadow: 0 0 5px #fd2155, 0 0 15px rgb(8, 253, 216), 0 0 20px rgb(8, 253, 216), 0 0 40px #fd2155, 0 0 60px grey, 0 0 10px white, 0 0 98px grey;
-    color: white ;
-  }
-} */
 #home  h2 {
   /* display: inline-block; */
   /* padding: 15px 60px;
