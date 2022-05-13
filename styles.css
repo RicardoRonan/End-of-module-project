@@ -39,6 +39,9 @@ section {
   /* margin: 0 -0.25rem; */
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   border-color: #08fdd8;
+  position: relative;
+  top: -8px;
+  right: -3px;
 }
 #contact-btn:hover {
   color: #fff;
@@ -603,6 +606,107 @@ iframe {
 .unfolder:checked ~ label .unfold-icon {
   display: none;
 }
+#breathing-img {
+  position: relative;
+  top: -909px;
+  right: -1113px;
+  zoom: 41%;
+  filter: invert(1);
+}
+.floating {
+  animation: floating 5s ease-in-out infinite;
+  /* animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+  box-shadow: 10px 10px 59px 6px rgba(67, 67, 67, 0.36);
+  -webkit-box-shadow: 10px 10px 59px 6px rgba(67, 67, 67, 0.36);
+  -moz-box-shadow: 10px 10px 59px 6px rgba(67, 67, 67, 0.36);
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(16);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#breathing-button {
+  width: 180px;
+  padding: 12px;
+  margin: 50px auto;
+  border: 1px solid #3cc8b4;
+  -webkit-animation: breathing 5s ease-out infinite normal;
+  animation: breathing 5s ease-out infinite normal;
+  font-family: "Lantinghei SC";
+  font-size: 16px;
+  background: #3cc8b4;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 2px;
+  text-align: center;
+}
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
 
 @media only screen and (max-width: 375px) {
   button#navbar-btn {
@@ -774,11 +878,6 @@ iframe {
     height: auto;
   }
 
-  #testimonials h1 {
-    /* position: relative;
-
-    right: 20px; */
-  }
   #info {
     position: absolute;
     bottom: -4px;
@@ -792,7 +891,5 @@ iframe {
     overflow: hidden;
     animation: t 2s linear infinite alternate,
       blink-caret 0.5s step-end infinite;
-  }
-  #test-title-container {
   }
 }
