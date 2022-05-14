@@ -52,6 +52,7 @@ section {
   position: relative;
   top: -8px;
   right: -3px;
+  margin-top: 20px;
 }
 
 #contact-btn:hover {
@@ -142,6 +143,8 @@ h1.blast {
 }
 
 
+
+
 @keyframes blink-caret {
 
   from,
@@ -195,6 +198,14 @@ h1.blast {
 #canvas a:hover {
   color: #08fdd8;
 }
+#top-icon{
+  border-radius: 50%;
+    width: 48px;
+    height: 48px;
+  background-color: #1d1e22;
+  color: #08fdd8 !important;
+}
+
 
 #box i {
   color: white;
@@ -758,26 +769,28 @@ iframe {
   /* border-radius: 5px;   */
   text-decoration: none;
 
-  animation-duration: 1s;
+  animation-duration: 1.254s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
 }
 #home h1 {
   text-decoration: none;
 
-  animation-duration: 1s;
+  animation-duration: 1.254s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
 }
 #home h1:hover{
 
   animation-name: rubberBand;
+  color: #08fdd8;
 }
 
 
 
 #home  h2:hover {
   animation-name: rubberBand;
+  color: #fd2155;
 }
 
 
