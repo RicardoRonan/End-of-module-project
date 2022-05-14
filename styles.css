@@ -1098,7 +1098,7 @@ iframe {
 }
 @media only screen and  (max-width: 1285.6px) and (orientation: landscape) {
   section#resume {
-    min-height: 222vh;
+    min-height: 240vh;
 }
 .middle-card {
   right: 71px;
