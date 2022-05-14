@@ -1101,10 +1101,12 @@ iframe {
     min-height: 240vh;
 }
 .middle-card {
+  position: inherit;
   right: 70px;
   top: 277px;
 }
 .right-card.p-3 {
+  position: inherit;
   left: 355px;
 
 }
