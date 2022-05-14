@@ -823,6 +823,7 @@ iframe {
     right: 30px;
     z-index: 1000;
   }
+ 
 }
 
 @media only screen and (max-width: 600px) {
@@ -1094,4 +1095,17 @@ iframe {
 
 
 
+}
+@media only screen and  (max-width: 1285.6px) and (orientation: landscape) {
+  section#resume {
+    min-height: 222vh;
+}
+.middle-card {
+  right: 71px;
+  top: 277px;
+}
+.right-card.p-3 {
+  left: 353px;
+
+}
 }
