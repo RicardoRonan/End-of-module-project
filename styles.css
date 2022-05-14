@@ -27,12 +27,14 @@ section {
   font-family: "Bebas Neue", cursive;
   font-size: 100px;
   text-shadow: 3px 3px 3px black;
+  user-select: none;
 }
 
 #home h2 {
   font-family: "Bebas Neue", cursive;
   font-size: 80px;
   text-shadow: 3px 3px 3px black;
+  user-select: none;
 }
 
 #landing-text {
