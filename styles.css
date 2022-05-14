@@ -643,8 +643,8 @@ iframe {
   margin-top: 140px;
   border-radius: 50%;
   box-shadow: inset 0 0 50px #fff, inset 20px 0 60px rgb(255, 255, 255),
-    inset -20px 0 60px blue, inset 20px 0 300px violet, inset -20px 0 300px blue,
-    0 0 50px #fff, -10px 0 60px violet, 10px 0 60px blue;
+    inset -20px 0 60px #08fdd8, inset 20px 0 300px #fd2155, inset -20px 0 300px #08fdd8,
+    0 0 50px #fff, -10px 0 60px #fd2155, 10px 0 60px #08fdd8;
 }
 
 @keyframes spin {
