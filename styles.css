@@ -22,6 +22,49 @@ section {
 #home {
   padding: 80px;
 }
+p#scroll {
+  transform: translate(-85px, 89px);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+p#scroll1 {
+  transform: translate(1200px, -24px);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+p#scroll {
+	color: #cccccc;
+	text-decoration: none;
+	transition: all 0.4s ease-in-out;
+  animation: float 2s ease-in-out infinite;
+}
+ #scroll1{
+	color: #cccccc;
+	text-decoration: none;
+	transition: all 0.4s ease-in-out;
+  animation: float 2s ease-in-out infinite;
+
+} 
+.scroll-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
 
 #home h1 {
   font-family: "Bebas Neue", cursive;
@@ -855,7 +898,7 @@ iframe {
 }
 .footer-container{
   border-top: solid #08fdd8;
-  padding-top: 20px;
+     padding-top: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1126,10 +1169,27 @@ iframe {
     box-shadow: 0 4px 30px rgb(0 0 0 / 50%);
     border-radius: 6px;
   }
-
-
-
 }
+
+/* 
+  @media only screen and (max-width: 725.60px){
+    .main-card.card-lg.bg-dark.p-5 {
+      left: -8px;
+  }
+  .left-card.p-4 {
+    left: 105px;
+}
+  
+.middle-card {
+  top: 415px;
+  right: 45px;
+}
+
+
+  } */
+  
+
+
 @media only screen and  (max-width: 1285.6px) and (orientation: landscape) {
   section#resume {
     min-height: 240vh;
